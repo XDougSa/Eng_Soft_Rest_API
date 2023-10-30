@@ -16,10 +16,6 @@ class usermodel{
             return 0;
         }
     }
-    function listar(){
-        $connection = new connection();
-        return $connection -> connect() -> query("SELECT* FROM usuarios;") -> fetchAll(PDO::FETCH_ASSOC);
-    }
 }
 
 ?>
