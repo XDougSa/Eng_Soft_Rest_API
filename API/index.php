@@ -18,6 +18,27 @@ if ($method == "POST") {
             break;
     }
 }
+if ($method == "GET") {
+    switch($url) {
+        case '/listar':
+            $usuario = new usercontroller();
+            $result = $usuario -> listar();
+            echo $result;
+            break;
+        default:
+            echo "Rota não existe";
+            break;
+    }
+} if ($method != "GET" && $method != "POST") {
 
+    // se o método passado não está em nenhum if então ele não faz sparte da api logo
+    // a mensagem abaixo é retornada no echo
+    $response = [
+        "status" => 405,
+        "message" => "Metodo $method nao permitido"
+    ];
+    header ("HTTP/1.0 405 Method Not Allowed");
+    echo (json_encode ($response));
+}
 
 ?>
