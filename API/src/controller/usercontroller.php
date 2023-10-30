@@ -21,6 +21,11 @@ class usercontroller{
             return(json_encode($data));
         }
     }
+    function listar(){
+        $model = new usermodel();
+        $result = $model -> listar();
+        return (json_encode($result));
+}
 
 
 }
