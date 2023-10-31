@@ -1,0 +1,17 @@
+{
+    "name": "dougl/api",
+    "autoload": {
+        "psr-4": {
+            "connection\\": "src/connection",
+            "controller\\": "src/controller",
+            "model\\": "src/model"
+        }
+    },
+    "authors": [
+        {
+            "name": "Douglas",
+            "email": "douglassa321@gmial.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,17 @@
+{
+    "name": "dougl/eng-sof",
+    "autoload": {
+        "psr-4": {
+            "view\\": "src/view",
+            "controller\\": "src/controller",
+            "api\\": "src/api"
+        }
+    },
+    "authors": [
+        {
+            "name": "Douglas",
+            "email": "douglassa321@gmial.com"
+        }
+    ],
+    "require": {}
+}
